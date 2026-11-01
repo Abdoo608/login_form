@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f3;
+    color: #222;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 55px;
+}
+
+/* Logo */
+.logo {
+    width: 35px;
+    height: 35px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.logo span {
+    width: 13px;
+    height: 17px;
+    background: #ff3f68;
+    transform: rotate(10deg);
+}
+
+/* Logo Hover */
+.logo:hover {
+    transform: rotate(360deg) scale(1.1);
+    cursor: pointer;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    color: #ff3f68;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   BUY NOW BUTTON
+========================= */
+
+.buy-btn {
+    text-decoration: none;
+    color: white;
+    background: #ff3f68;
+    padding: 16px 28px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Buy Button Hover */
+.buy-btn:hover {
+    background: #d92f55;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 63, 104, 0.3);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    padding-left: 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Content */
+.hero-content {
+    width: 52%;
+    padding-bottom: 60px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #4d91d8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h1 span {
+    color: #ff3f68;
+}
+
+/* Description */
+.description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 530px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   DOWNLOAD CV BUTTON
+========================= */
+
+.cv-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #ff3f68;
+    padding: 17px 28px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+#out {
+    background-color: #4d91d8;
+}
+
+#out:hover{
+    background: #4d91d8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(42, 133, 244, 0.3);
+}
+
+/* CV Button Hover */
+#work:hover {
+    background: #d92f55;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 63, 104, 0.3);
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    width: 42%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 25px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .hero {
+        padding: 50px 25px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        margin: 0 auto 25px;
+    }
+
+    .hero-image {
+        position: relative;
+        display: flex;
+    }
+}
